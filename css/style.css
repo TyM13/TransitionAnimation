@@ -15,7 +15,35 @@ img{
 
 }
 
-img:hover{
+#img_one:hover{
     width: 65%;
     transition: width 1s ease-in-out;
 }
+
+a{
+    font-size: 50%;
+    background-color: beige;
+}
+
+a:hover{
+    font-size: 100%;
+    background-color: aliceblue;
+    transition: all 2s ease-in-out;
+}
+
+
+@keyframes myAnimationName {
+    0% {
+    width: 100px;
+    }
+    100% {
+    width: 200px;
+    background-color: aquamarine;
+    }
+    }
+
+
+#img_two:hover{
+animation: myAnimationName 4s ease-in-out 4 alternate ;
+}
+
